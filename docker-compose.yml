@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  uplatform:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: uplatform-service
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    restart: "unless-stopped"
