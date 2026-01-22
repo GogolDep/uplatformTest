@@ -11,4 +11,5 @@
 ## Запуск в Docker 
 - сборка образа: docker build -t uplatform:alpine .
 - запуск: docker run --rm -p 8080:8080 --env-file .env uplatform:alpine
+- docker compose -f docker-compose.yml -- env-file .env up
 После запуска сервер доступен по адресу: http://localhost:8080
